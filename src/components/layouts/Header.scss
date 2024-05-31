@@ -1,0 +1,132 @@
+.main-header-container {
+  .top-header {
+    background-color: #ff6404;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Aria";
+
+    .login-links {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      cursor: pointer;
+      li {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .bottom-header {
+    nav {
+      background: #f9f9f9;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      color: #000;
+    }
+    nav .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .navbar .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        font-size: 30px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 4rem;
+      }
+    }
+    nav .navbar .nav-links {
+      line-height: 70px;
+      height: 100%;
+    }
+    nav .navbar .links {
+      display: flex;
+    }
+    nav .navbar .links li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      padding: 0 14px;
+    }
+    nav .navbar .links li a {
+      height: 100%;
+      text-decoration: none;
+      white-space: nowrap;
+      color: #000;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .links li:hover .htmlcss-arrow,
+    .links li:hover .js-arrow {
+      transform: rotate(180deg);
+    }
+
+    nav .navbar .links li .arrow {
+      /* background: red; */
+      height: 100%;
+      width: 22px;
+      line-height: 70px;
+      text-align: center;
+      display: inline-block;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+    nav .navbar .links li .sub-menu {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      line-height: 40px;
+      background: #f9f9f9;
+      color: #000;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 4px 4px;
+      display: none;
+      z-index: 2;
+      border: 1px solid #000;
+    }
+    nav .navbar .links li:hover .htmlCss-sub-menu,
+    nav .navbar .links li:hover .js-sub-menu {
+      display: block;
+    }
+    .navbar .links li .sub-menu li {
+      padding: 0 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .navbar .links li .sub-menu a {
+      color: #000;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .navbar .links li .sub-menu .more-arrow {
+      line-height: 40px;
+    }
+    .navbar .links li .sub-menu .more-sub-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      border-radius: 0 4px 4px 4px;
+      z-index: 1;
+      display: none;
+    }
+    .links li .sub-menu .more:hover .more-sub-menu {
+      display: block;
+    }
+    .navbar .bx-menu {
+      display: none;
+    }
+  }
+}
