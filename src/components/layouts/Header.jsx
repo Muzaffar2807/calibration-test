@@ -1,5 +1,9 @@
 import React from "react";
 import "./Header.scss";
+import {
+  MdKeyboardArrowDown,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 
 const Header = () => {
   return (
@@ -17,7 +21,6 @@ const Header = () => {
       <div className="bottom-header">
         <nav>
           <div className="navbar">
-       
             <div className="logo">
               <a href="#"> YOUR LOGO</a>
             </div>
@@ -32,31 +35,31 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="#">Title 2</a>
-                  <i className="bx bxs-chevron-down htmlcss-arrow arrow  "></i>
+                  <MdKeyboardArrowDown />
                   <ul className="htmlCss-sub-menu sub-menu">
                     <li>
-                      <a href="#">Web Design</a>
+                      <a href="#">SUBMENU 1</a>
                     </li>
                     <li>
-                      <a href="#">Login Forms</a>
+                      <a href="#">SUBMENU 2</a>
                     </li>
                     <li>
-                      <a href="#">Card Design</a>
+                      <a href="#">SUBMENU 3</a>
                     </li>
                     <li className="more">
-                      <span>
-                        <a href="#">More</a>
-                        <i className="bx bxs-chevron-right arrow more-arrow"></i>
+                      <span style={{ display: 'flex', alignItems: 'center'}}>
+                        <a href="#">SUBMENU 4</a>
+                        <MdOutlineKeyboardArrowRight />
                       </span>
                       <ul className="more-sub-menu sub-menu">
                         <li>
-                          <a href="#">Neumorphism</a>
+                          <a href="#">SUBMENU 1</a>
                         </li>
                         <li>
-                          <a href="#">Pre-loader</a>
+                          <a href="#">SUBMENU 2</a>
                         </li>
                         <li>
-                          <a href="#">Glassmorphism</a>
+                          <a href="#">SUBMENU 3</a>
                         </li>
                       </ul>
                     </li>
@@ -67,16 +70,16 @@ const Header = () => {
                   <i className="bx bxs-chevron-down js-arrow arrow "></i>
                   <ul className="js-sub-menu sub-menu">
                     <li>
-                      <a href="#">Dynamic Clock</a>
+                      <a href="#">SUBMENU 1</a>
                     </li>
                     <li>
-                      <a href="#">Form Validation</a>
+                      <a href="#">SUBMENU 2</a>
                     </li>
                     <li>
-                      <a href="#">Card Slider</a>
+                      <a href="#">SUBMENU 3</a>
                     </li>
                     <li>
-                      <a href="#">Complete Website</a>
+                      <a href="#">SUBMENU 4</a>
                     </li>
                   </ul>
                 </li>

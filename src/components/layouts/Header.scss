@@ -33,6 +33,7 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+          padding: 0 12rem;
     }
     .navbar .logo {
       display: flex;
@@ -103,7 +104,7 @@
       display: block;
     }
     .navbar .links li .sub-menu li {
-      padding: 0 22px;
+    //  padding: 0 22px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
     .navbar .links li .sub-menu a {
